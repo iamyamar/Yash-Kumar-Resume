@@ -10,10 +10,13 @@ import {
 import React from "react";
 import { NavLink } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
+  root: {
+    position: "fixed",
+  },
   container: {
     height: "100vh",
     color: "white",
-    paddingTop: theme.spacing(4),
+    paddingTop: theme.spacing(10),
     backgroundColor: theme.palette.primary.main,
   },
   item: {
@@ -42,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
 const Leftbar = () => {
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.root}>
       <Container className={classes.container}>
         <NavLink to="/" className={classes.item}>
           <Home className={classes.icon} />

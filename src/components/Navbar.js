@@ -11,6 +11,8 @@ import React from "react";
 const useStyle = makeStyles((theme) => ({
   appbar: {
     boxShadow: "10",
+    position: "fixed",
+    top: 0,
   },
   toolbar: {
     display: "flex",

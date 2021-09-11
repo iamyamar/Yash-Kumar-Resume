@@ -12,6 +12,7 @@ const useStyle = makeStyles((theme) => ({
   container: {
     position: "fixed",
     right: 0,
+    paddingTop: theme.spacing(10),
   },
   item: {
     display: "flex",
