@@ -18,7 +18,7 @@ const useStyle = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     padding: theme.spacing(2),
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up("md")]: {
       margin: theme.spacing(3),
       marginRight: theme.spacing(0),
       cursor: "pointer",
@@ -26,12 +26,12 @@ const useStyle = makeStyles((theme) => ({
     },
   },
   text: {
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("md")]: {
       display: "none",
     },
   },
   icon: {
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("md")]: {
       fontSize: "30px",
       color: "white",
     },

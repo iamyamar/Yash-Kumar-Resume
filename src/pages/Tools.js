@@ -1,5 +1,7 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
+import { Grid, makeStyles } from "@material-ui/core";
+import Toolcard from "../components/Toolcard";
+import Data from "../assets/data/ToolsAPI";
 
 const useStyle = makeStyles((theme) => ({
   root: {
@@ -19,6 +21,10 @@ const Tools = () => {
     <div className={classes.root}>
       <div className={classes.head}>
         <h6 className={classes.heading}>Tools & Technologies</h6>
+      </div>
+
+      <div>
+        <Toolcard data={Data} />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
-import Image from "../assets/images/yash.jpg";
+import Image from "../assets/yash.jpg";
 
 const useStyle = makeStyles((theme) => ({
   root: {

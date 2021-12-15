@@ -6,13 +6,14 @@ import Header from "./parts/header";
 import Contact from "./components/Contact";
 import "./assets/scss/app.scss";
 import { Grid, makeStyles } from "@material-ui/core";
-import Leftbar from "./components/Leftbar";
+import Leftbar from "./parts/Leftbar";
 import Tools from "./pages/Tools";
-import Social from "./pages/Social";
+import Social from "./parts/Social";
 import Education from "./pages/Education";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Certificates from "./pages/Certificates";
+import Download from "./components/Download";
 const useStyle = makeStyles((theme) => ({
   root: {
     paddingtop: theme.spacing(20),
@@ -37,6 +38,16 @@ const App = () => {
             <Route path="/certificate" component={Certificates} />
             <Redirect to="./" />
           </Switch>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "20px",
+              paddingBottom: "40px",
+            }}
+          >
+            <Download />
+          </div>
         </Grid>
         <Grid item sm={1} xs={2}>
           <Social />
